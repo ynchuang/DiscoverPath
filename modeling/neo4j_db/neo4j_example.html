@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>KG on Alzheimer's disease</title>
+    <style type="text/css">
+        body { background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);}
+
+        #viz {
+            width: 1900px;
+            height: 750px;
+            border: 2px inset black;
+            font: 30pt;
+        }
+    </style>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.neo4jlabs.com/neovis.js/v1.5.0/neovis.js"></script>
+
+    <script type="text/javascript">
+        var viz;
+
+        function draw() {
+
+            var config = {
+                container_id: "viz",
+                server_url: "bolt://localhost:7687",
+                server_user: "neo4j",
+                server_password: "neo4j1",
+                labels: {
+                    "NER_Bio": {
+                        caption: "name",
+                        size: 5.0,
+                                sizeCypher: "MATCH (n) WHERE id(n) = {id} RETURN SIZE((n)-[]->()) AS s;",
+                        font: {
+                            size: 20
+                        },
+                        group: 'community',
+                    },
+                    "Paper": {
+                        caption: "name",
+                        size: 3.0,
+                                sizeCypher: "MATCH (n) WHERE id(n) = {id} RETURN SIZE((n)-[]->()) AS s;",
+                        font: {
+                            size: 20
+                        },
+                        nodes: {
+						    shape: 'neo',
+					    },
+                        group: 'community',
+                    }
+                },
+                relationships: {
+                    font: {
+                            size: 10
+                        }
+                },
+                initial_cypher: "MATCH p = (bio_ner_h)-[r*1..3]->(bio_ner_t) WHERE bio_ner_t.name = 35061102 or bio_ner_h.name = 35061102 RETURN p",
+                arrows: true,
+            }
+
+            viz = new NeoVis.default(config);
+            viz.render();
+            console.log(viz);
+        }
+    </script>
+</head>
+<body onload="draw()">
+<div id="viz"></div>
+
+<h2></h2>
+<h2> <font color="#6a11cb">Cypher Query: </font> </h2>
+<textarea rows="6" cols=80 id="cypher">// [NOTE] Input the Keywords or the Paper_id you want to search between " " &#10;WITH "AD" as query &#10;MATCH p = (head)-[r]->(tail) &#10;WHERE head.name STARTS WITH query or tail.name STARTS WITH query &#10;RETURN p</textarea><br>
+
+<input type="submit" value="Submit" id="reload" background-color:pink>
+<input type="submit" value="Stabilize" id="stabilize" background-color:pink>
+
+
+</body>
+
+<script>
+    $("#reload").click(function () {
+
+        var cypher = $("#cypher").val();
+
+        if (cypher.length > 3) {
+            viz.renderWithCypher(cypher);
+        } else {
+            console.log("reload");
+            viz.reload();
+        }
+    });
+
+    $("#stabilize").click(function () {
+        viz.stabilize();
+    })
+
+</script>
+</html>
