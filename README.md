@@ -23,7 +23,7 @@ The overall GUI interface of the DiscoverPath system, which consists of a fronte
 A using pipeline overview of DiscoverPath based on a client-server architecture. DiscoverPath follows a pipeline to gradually refine the knowledge graphs that meet the requirements of users. Users first give their initial queries to get the initial knowledge graphs, and then utilize the recommended queries to refine the initial one before visualizing the Interdisciplinary knowledge.
 
 <div align=center>
-<img width="700" height="300" src="./fig/pipeline.png">
+<img width="750" height="300" src="./fig/pipeline.png">
 </div>
 
 ### Demonstration
