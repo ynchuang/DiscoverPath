@@ -6,7 +6,7 @@ This project focus on interdisciplinary knowledge exploration in biomedical rese
 :mega: We have released our paper and demo video to help readers better understand the DiscoverPath system.
 * Paper: [https://arxiv.org/pdf/2309.01808](https://arxiv.org/pdf/2309.01808)
 * Demo Video: [https://www.youtube.com/watch?v=xcDzBl7jp-s](https://www.youtube.com/watch?v=xcDzBl7jp-s)
-* :loudspeaker: Do you want to learn more about data pipeline search? Please check out our [data-centric AI survey](https://arxiv.org/abs/2303.10158) and [data-centric AI resources](https://github.com/daochenzha/data-centric-AI)!
+* Do you want to learn more about data pipeline search? Please check out our [data-centric AI survey](https://arxiv.org/abs/2303.10158) and [data-centric AI resources](https://github.com/daochenzha/data-centric-AI)!
 
 
 The interdisciplinarity information can be discovered by the knowledge graphs presented in DiscoverPath system. The hidden knowledge appears in high-order path of knowledge graphs. Users are allowed to leverage any Cypher Query to find more relationships, such as shortest path of two terms, in the knowledge graphs.
