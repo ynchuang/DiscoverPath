@@ -11,7 +11,7 @@ DiscoverPath is a Knowledge Graphs (KGs) based paper search engine for biomedica
 ## How DiscoverPath works?
 The interdisciplinarity information can be discovered by the knowledge graphs presented in DiscoverPath system. The hidden knowledge appears in high-order path of knowledge graphs. Users are allowed to leverage any Cypher Query to find more relationships, such as shortest path of two terms, in the knowledge graphs.
 <div align=center>
-<img width="500" height="300" src="./fig/KG1.png">
+<img width="400" height="400" src="./fig/KG1.png">
 </div>
 
 
