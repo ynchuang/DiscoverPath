@@ -1,14 +1,14 @@
 # DiscoverPath: A Knowledge Refinement and Retrieval System for Interdisciplinarity on Biomedical Research
 <img width="300" height="200" src="./fig/logo.png">
 
-This project focus on interdisciplinary knowledge exploration in biomedical research. To increase the convenience of exploration, we build [DiscoverPath](https://www.researchgate.net/publication/369755614_DiscoverPath_A_Knowledge_Refinement_and_Retrieval_System_for_Interdisciplinarity_on_Biomedical_Research) system, a knowledge graph based retrieval system for interdisciplinary knowledge exploration in biomedical research. Biomedical research can significantly benefit from a powerful information retrieval system. However, existing tools heuristically adopt surface elements to represent an entity for retrieval, such as the authors and terminologies of an article, which severely limits the discovery of interdisciplinary knowledge hidden from different entities. DiscoverPath is developed by [Data Lab](https://cs.rice.edu/~xh37/) at Rice University.
+DiscoverPath is a Knowledge Graphs (KGs) based paper search engine for biomedical research. It addresses scenarios where users encounter challenges in pinpointing suitable search queries, particularly in interdisciplinary fields where researchers from diverse backgrounds tend to employ diverse terminologies to describe similar research. In contrast to conventional keyword-based paper search engines like Google Scholar and PubMed, DiscoverPath visualizes the papers and queries that are related to the given query with KGs, facilitating the users to develop a progressive “path” toward discovering the most relevant papers. DiscoverPath is developed by [Data Lab](https://cs.rice.edu/~xh37/) at Rice University.
 
 :mega: We have released our paper and demo video to help readers better understand the DiscoverPath system.
 * Paper: [https://arxiv.org/pdf/2309.01808](https://arxiv.org/pdf/2309.01808)
 * Demo Video: [https://www.youtube.com/watch?v=xcDzBl7jp-s](https://www.youtube.com/watch?v=xcDzBl7jp-s)
 * Do you want to learn more about data pipeline search? Please check out our [data-centric AI survey](https://arxiv.org/abs/2303.10158) and [data-centric AI resources](https://github.com/daochenzha/data-centric-AI)!
 
-## How To Fully Utilize DiscoverPath
+## How DiscoverPath works?
 The interdisciplinarity information can be discovered by the knowledge graphs presented in DiscoverPath system. The hidden knowledge appears in high-order path of knowledge graphs. Users are allowed to leverage any Cypher Query to find more relationships, such as shortest path of two terms, in the knowledge graphs.
 <div align=center>
 <img width="500" height="300" src="./fig/KG1.png">
@@ -16,7 +16,6 @@ The interdisciplinarity information can be discovered by the knowledge graphs pr
 
 
 ## Cite This Work
-
 If you find this project useful, you can cite this work by:
 
 Chuang Yu-Neng, et al. "DiscoverPath: A Knowledge Refinement and Retrieval System for Interdisciplinarity on Biomedical Research"
