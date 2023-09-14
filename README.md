@@ -5,7 +5,7 @@ DiscoverPath is a Knowledge Graphs (KGs) based paper search engine for biomedica
 
 :mega: We have released our paper and demo video to help readers better understand the DiscoverPath system.
 * Paper: [https://arxiv.org/pdf/2309.01808](https://arxiv.org/pdf/2309.01808)
-* Demo Video: [https://www.youtube.com/watch?v=xcDzBl7jp-s](https://www.youtube.com/watch?v=xcDzBl7jp-s)
+* Demo Video: [https://youtu.be/xcDzBl7jp-s](https://youtu.be/xcDzBl7jp-s)
 * Do you want to learn more about data pipeline search? Please check out our [data-centric AI survey](https://arxiv.org/abs/2303.10158) and [data-centric AI resources](https://github.com/daochenzha/data-centric-AI)!
 
 ## How DiscoverPath works?
