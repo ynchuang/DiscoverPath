@@ -1,7 +1,7 @@
 # DiscoverPath: A Knowledge Refinement and Retrieval System for Interdisciplinarity on Biomedical Research
 <img width="300" height="200" src="./fig/logo.png">
 
-DiscoverPath is a Knowledge Graphs (KGs) based paper search engine for biomedical research. It addresses scenarios where users encounter challenges in pinpointing suitable search queries, particularly in interdisciplinary fields where researchers from diverse backgrounds tend to employ diverse terminologies to describe similar research. In contrast to conventional keyword-based paper search engines like Google Scholar and PubMed, DiscoverPath visualizes the papers and queries that are related to the given query with KGs, facilitating the users to develop a progressive “path” toward discovering the most relevant papers. DiscoverPath is developed by [Data Lab](https://cs.rice.edu/~xh37/) at Rice University.
+DiscoverPath is a Knowledge Graphs (KGs) based paper search engine for biomedical research. It addresses scenarios where users encounter challenges in pinpointing suitable search queries, particularly in interdisciplinary fields where researchers from diverse backgrounds tend to employ diverse terminologies to describe similar research. In contrast to conventional keyword-based paper search engines like Google Scholar and PubMed, DiscoverPath visualizes the papers and queries that are related to the given query with KGs, facilitating users to develop a progressive “path” toward discovering the most relevant papers. DiscoverPath is developed by [Data Lab](https://cs.rice.edu/~xh37/) at Rice University.
 
 :mega: We have released our paper and demo video to help readers better understand the DiscoverPath system.
 * Paper: [https://arxiv.org/pdf/2309.01808](https://arxiv.org/pdf/2309.01808)
